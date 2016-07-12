@@ -1,6 +1,6 @@
 {
   "name": "is-whitespace-character",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check if a character is a whitespace character",
   "license": "MIT",
   "keywords": [
