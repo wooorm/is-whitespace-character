@@ -1,20 +1,8 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module is-whitespace-character
- * @fileoverview Test suite for `is-whitespace-character`.
- */
-
 'use strict';
 
-/* eslint-env node */
-
-/* Dependencies. */
 var test = require('tape');
 var whitespace = require('./');
 
-/* Tests. */
 test('whitespace(character)', function (t) {
   t.ok(whitespace(' '));
   t.ok(whitespace('\n'));
