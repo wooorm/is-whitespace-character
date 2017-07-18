@@ -12,14 +12,14 @@
     "white",
     "space"
   ],
-  "files": [
-    "index.js"
-  ],
-  "repository": "https://github.com/wooorm/is-whitespace-character",
+  "repository": "wooorm/is-whitespace-character",
   "bugs": "https://github.com/wooorm/is-whitespace-character/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {},
   "devDependencies": {
