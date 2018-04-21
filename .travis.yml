@@ -4,19 +4,12 @@ node_js:
 - '8.0'
 after_success: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: wkyXZZS7d30BYOilro18+QTbrOxwhpjJoK0C3YQNMDPaH5adijD5c8MXgUlldYUj8mUVrSdZeA+z37/9abRILfms1vUI/jTXZIvOok3Ul+/RcXuuIr5494ARhZVrJ8ojOqHa2ZgOaKlOrT9SIdcEDFanGS/FSKNFewfTjDYHGffpNhko+RTvzFK/oxIf4dI/8ehhyTtOweAjqszheUTxhfC/gLKB/3GtPC0wjl2C9eU+a/UjLYxeTnn3zUSdcTCPleAj5pICvM/kn6ghm2gWESyG3GFbcG9P7YYOIzPaSiOfwRErBc1cySlFz5/Hu4PdWODiLefWXBs0CBoWwY/8xvhGTI6pH8/CxEYdMQFFqQkaZxtqrUaZBA1+he/IvSmr0+KYn9mgB8FHFATJV+jfgia6w7UKV6mDwrj4ozFW1ymQEjJ3coY/N7LPkm6rzsbsnFbMPE33vRQZQ1382freNd085LQwfNz1SHi1505k0qR6dMWx8gmkql8nEKjT8G43d4NCWdTMluy7cGtz5aX8LAployGKeJ3YShIvu4S+coRdWzzAq7qLlklSbATt1q5rI8E5BLVyCp3ElMWiEtdbkfwmATkyF/5wJvGpryQAwNoAftFT+t2CtiuCWGP10ySt9d/zHps4Ji8T9AxIPlHLqfS0MCD7EJZyxjpFjx/6gPI=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    api_key:
-      secure: D/vee6EmOu8Eg5p1aG27oanDBGK8oCBgqlqYRhH1l3Dn38ONo8k5XzCfhFwJ2vuxb+l48Ds6dWxGP/8Kzdmmy+5zQRcGPGOz+yDx4zTAi4ZDSHpHF7RYaNeoUSTNoOBuZycHuK2fvKYUT23LHLiZhGq1vUjaRDZhxCawLv+X1d8MZWhQHa21W3aTsGwdiYdwjZxcrX29KsKeG3V/I+FC+YA+Hr/jEQObIpmg4ZDLIxZ1UadTmaVjU9KcSn9RiPWr5KmYDBhVFR1lKwjO0SsCWcKdJahhIwto0G1BWrO319KtOlFwGKQ6YVG92In29r+kiBSGkOvSGHwsLSi9iuelUUlLpseF49AczTSwRkAzjv5z2DdHLCkN+/2HtMUrV4Zl+xEr9sfixmIddT8bFeA6SLWZTFOLneIc0z0QyJb3i+naxZF/MK2FypzCAPTKbSL3rqcCbNt3HgxcyfK6usYKmcpcpiyS+suXwDmpsoxELrXt6b1yU8D+tkXtME+0MGsG+L8RrMUoq+AL4qrgLu2m26YwvXLff/mxVrnyL9n2kAcz7A5olb45ie2dXnDy4xpSouVh0XSGetuLa8x29xEODzXtRh65vkfPNAkvhW8T4iehUZ9c23WICyFtujrdUmKlZp5Pf/yK53QO7+iJRTW0qDLAk2N6A0gcuge7Dn53/CU=
-    file:
-      - "is-whitespace-character.js"
-      - "is-whitespace-character.min.js"
-    on:
-      tags: true
-      node: '8.0'
+  provider: releases
+  api_key:
+    secure: D/vee6EmOu8Eg5p1aG27oanDBGK8oCBgqlqYRhH1l3Dn38ONo8k5XzCfhFwJ2vuxb+l48Ds6dWxGP/8Kzdmmy+5zQRcGPGOz+yDx4zTAi4ZDSHpHF7RYaNeoUSTNoOBuZycHuK2fvKYUT23LHLiZhGq1vUjaRDZhxCawLv+X1d8MZWhQHa21W3aTsGwdiYdwjZxcrX29KsKeG3V/I+FC+YA+Hr/jEQObIpmg4ZDLIxZ1UadTmaVjU9KcSn9RiPWr5KmYDBhVFR1lKwjO0SsCWcKdJahhIwto0G1BWrO319KtOlFwGKQ6YVG92In29r+kiBSGkOvSGHwsLSi9iuelUUlLpseF49AczTSwRkAzjv5z2DdHLCkN+/2HtMUrV4Zl+xEr9sfixmIddT8bFeA6SLWZTFOLneIc0z0QyJb3i+naxZF/MK2FypzCAPTKbSL3rqcCbNt3HgxcyfK6usYKmcpcpiyS+suXwDmpsoxELrXt6b1yU8D+tkXtME+0MGsG+L8RrMUoq+AL4qrgLu2m26YwvXLff/mxVrnyL9n2kAcz7A5olb45ie2dXnDy4xpSouVh0XSGetuLa8x29xEODzXtRh65vkfPNAkvhW8T4iehUZ9c23WICyFtujrdUmKlZp5Pf/yK53QO7+iJRTW0qDLAk2N6A0gcuge7Dn53/CU=
+  file:
+    - "is-whitespace-character.js"
+    - "is-whitespace-character.min.js"
+  on:
+    tags: true
+    node: '8.0'
