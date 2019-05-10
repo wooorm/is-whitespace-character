@@ -58,4 +58,4 @@ code at the first position (`string`), is a whitespace character.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
