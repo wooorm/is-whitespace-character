@@ -26,7 +26,7 @@ whitespace(' ') // => true
 whitespace('\n') // => true
 whitespace('\uFEFF') // => true
 whitespace('_') // => false
-whitespace('a') // => true
+whitespace('a') // => false
 whitespace('💩') // => false
 ```
 
