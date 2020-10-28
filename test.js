@@ -3,7 +3,7 @@
 var test = require('tape')
 var whitespace = require('.')
 
-test('whitespace(character)', function(t) {
+test('whitespace(character)', function (t) {
   t.ok(whitespace(' '))
   t.ok(whitespace('\n'))
   t.ok(whitespace('\r'))
