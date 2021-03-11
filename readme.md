@@ -51,9 +51,9 @@ first position (`string`), is a whitespace character.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/is-whitespace-character.svg
+[build-badge]: https://github.com/wooorm/is-whitespace-character/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/is-whitespace-character
+[build]: https://github.com/wooorm/is-whitespace-character/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-whitespace-character.svg
 
