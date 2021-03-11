@@ -1,5 +1,2 @@
 coverage/
-is-whitespace-character.js
-is-whitespace-character.min.js
-*.json
 *.md

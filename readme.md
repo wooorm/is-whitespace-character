@@ -11,6 +11,9 @@ terminator (`[\n\r\u2028\u2029]`).
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -20,19 +23,22 @@ npm install is-whitespace-character
 ## Use
 
 ```js
-var whitespace = require('is-whitespace-character')
+import {isWhitespaceCharacter} from 'is-whitespace-character'
 
-whitespace(' ') // => true
-whitespace('\n') // => true
-whitespace('\uFEFF') // => true
-whitespace('_') // => false
-whitespace('a') // => false
-whitespace('💩') // => false
+isWhitespaceCharacter(' ') // => true
+isWhitespaceCharacter('\n') // => true
+isWhitespaceCharacter('\uFEFF') // => true
+isWhitespaceCharacter('_') // => false
+isWhitespaceCharacter('a') // => false
+isWhitespaceCharacter('💩') // => false
 ```
 
 ## API
 
-### `whitespaceCharacter(character|code)`
+This package exports the following identifiers: `isWhitespaceCharacter`.
+There is no default export.
+
+### `isWhitespaceCharacter(character|code)`
 
 Check whether the given character code (`number`), or the character code at the
 first position (`string`), is a whitespace character.
