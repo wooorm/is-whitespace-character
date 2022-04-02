@@ -43,17 +43,17 @@ In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 npm install is-whitespace-character
 ```
 
-In Deno with [Skypack][]:
+In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {isWhitespaceCharacter} from 'https://cdn.skypack.dev/is-whitespace-character@2?dts'
+import {isWhitespaceCharacter} from 'https://esm.sh/is-whitespace-character@2'
 ```
 
-In browsers with [Skypack][]:
+In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {isWhitespaceCharacter} from 'https://cdn.skypack.dev/is-whitespace-character@2?min'
+  import {isWhitespaceCharacter} from 'https://esm.sh/is-whitespace-character@2?bundle'
 </script>
 ```
 
@@ -131,7 +131,7 @@ See [How to Contribute to Open Source][contribute].
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[skypack]: https://www.skypack.dev
+[esmsh]: https://esm.sh
 
 [license]: license
 
