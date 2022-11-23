@@ -5,7 +5,7 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Check if a character is a white space character.
+Check if a character is whitespace.
 
 ## Contents
 
@@ -37,7 +37,7 @@ point it becomes useful to defer to one shared function.
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
+In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install is-whitespace-character
@@ -72,22 +72,23 @@ isWhitespaceCharacter('💩') // => false
 
 ## API
 
-This package exports the following identifiers: `isWhitespaceCharacter`.
+This package exports the identifier `isWhitespaceCharacter`.
 There is no default export.
 
 ### `isWhitespaceCharacter(character|code)`
 
-Check whether the given character code (`number`) or the character code at the
-first position (`string`) is a whitespace character.
+Check if the given code point (`number`), or the code point at the first index
+(`string`), is a whitespace character.
 
 ## Types
 
 This package is fully typed with [TypeScript][].
+It exports no additional types.
 
 ## Compatibility
 
 This package is at least compatible with all maintained versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 It also works in Deno and modern browsers.
 
 ## Security
