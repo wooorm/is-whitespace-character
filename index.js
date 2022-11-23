@@ -8,7 +8,7 @@
 export function isWhitespaceCharacter(character) {
   return /\s/.test(
     typeof character === 'number'
-      ? String.fromCharCode(character)
+      ? String.fromCodePoint(character)
       : character.charAt(0)
   )
 }
